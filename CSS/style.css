@@ -1,0 +1,140 @@
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   padding: 0;
+}
+body {
+  
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;          
+  justify-content: center;
+ background: linear-gradient(to right, #0faad5, #0072ff);
+}
+.container {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 80%;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}     
+    
+.cards{
+  flex: 1; /* take equal space */
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #5fa4d2;
+}
+.cards h1 {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+ font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.cards p {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1rem;
+  margin-top: 15px;
+ width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form {
+  flex: 1;
+  flex-direction: column;
+  background: white;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.form h1 {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin-bottom: 4px;
+ font-size: 2.2rem;
+  color: black;
+  text-align: center;
+}
+
+.form p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+font-variation-settings: "wght" 550;
+}
+
+.form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #e1e3e8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.form textarea {
+  min-height: 100px;
+  resize: vertical;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #e1e3e8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 12px;
+  margin: 4% auto 0;
+  display: block;
+  width: 120px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  align-self: center;
+  align-items: center;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+
+.form button:hover {
+  background: #005bb5;
+}
