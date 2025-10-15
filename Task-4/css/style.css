@@ -1,0 +1,541 @@
+:root {
+    --primary-text-color: #212529; 
+    --link-color: #6c757d;
+    --button-bg: #2d6b79; 
+    --button-hover: #1e4a55; 
+    --logo-color: #4a90e2; 
+    --background-color: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+}
+.logo-icon {
+    font-size: 1.5em;
+    color: var(--logo-color);
+    margin-right: 5px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: var(--primary-text-color);
+}
+
+.hero-section {
+    padding: 60px 0;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 2.5em;
+    font-weight: 800; 
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+.hero-description {
+    color: var(--link-color);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.05em;
+}
+
+
+.cta-button {
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-size: 1.05em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+.cta-button:hover {
+    background-color: var(--button-hover);
+}
+
+.hero-images {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.hero-image-item {
+    flex: 1;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+.hero-image-item img {
+    width: 100%;
+    height: 400px; 
+    display: block;
+    object-fit: cover;
+}
+
+.section2-wellbeing-section {
+    padding: 60px 0 80px;
+    background-color: var(--light-gray, #f8f8f8); 
+}
+.section2-wellbeing-section h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--primary-text-color, #212529);
+    margin-bottom: 40px;
+}
+.section2-wellbeing-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+.section2-wellbeing-features {
+    flex: 2;
+}
+.section2-wellbeing-illustration {
+    flex: 1;
+    max-width: 300px;
+    text-align: right;
+}
+.section2-wellbeing-illustration img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section2-feature-column {
+    display: flex;
+    gap: 30px;
+}
+.section2-feature-item {
+    flex: 1;
+}
+.section2-icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color, #0b4e5b);
+    color: white;
+    font-size: 1.5em;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.section2-feature-item p {
+    color: var(--link-color, #6c757d);
+    line-height: 1.5;
+}
+
+
+.section2-produce-section {
+    padding: 80px 0 60px;
+    background-color: #ffffff;
+}
+.section2-produce-layout {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.section2-produce-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.section2-produce-image img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+}
+
+.section2-produce-text-content {
+    flex: 1;
+    max-width: 50%;
+}
+.section2-produce-text-content h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-text-color, #212529);
+    margin-bottom: 20px;
+}
+.section2-produce-description {
+    color: var(--link-color, #6c757d);
+    margin-bottom: 30px;
+}
+
+.section2-produce-list .section2-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.section2-list-icon {
+    min-width: 35px;
+    height: 35px;
+    border: 1px solid var(--secondary-color, #0b4e5b);
+    color: var(--secondary-color, #0b4e5b);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 2px;
+}
+.section2-produce-list p {
+    margin: 0;
+    color: var(--link-color, #6c757d);
+}
+
+
+:root {
+    --primary-text-color: #212529;
+    --secondary-color: #0b4e5b; 
+    --accent-pink: #f0e0d8;
+    --footer-bg: #0b4e5b; 
+    --link-color: #6c757d;
+}
+
+
+.section3-food-quote-section {
+    padding: 60px 0;
+    background-color: var(--light-gray, #f8f8f8);
+    border-radius: 8px; 
+    max-width: 1100px;
+    margin: 40px auto;
+}
+.section3-food-quote-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.section3-food-illustration {
+    flex: 1;
+    max-width: 300px;
+}
+.section3-food-illustration img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.section3-quote-text {
+    flex: 2;
+}
+.section3-quote-text h2 {
+    color: var(--primary-text-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.section3-quote-features {
+    display: flex;
+    gap: 30px;
+}
+.section3-quote-item {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.section3-small-icon {
+    min-width: 30px;
+    height: 30px;
+    background-color: var(--accent-pink);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+.section3-quote-item p {
+    margin: 0;
+    color: var(--link-color);
+    font-size: 0.9em;
+}
+
+.section3-wellness-banner-wrapper {
+    position: relative;
+    padding-bottom: 200px; 
+    margin-top: 40px;
+}
+.section3-wellness-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.section3-banner-bg-image {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    display: block;
+}
+.section3-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 78, 91, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.section3-banner-content {
+    max-width: 600px;
+}
+.section3-banner-logo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.section3-banner-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+.section3-banner-content p {
+    margin-bottom: 25px;
+}
+.section3-cta-button {
+    background-color: white;
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1.05em;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.section3-cta-button:hover {
+    opacity: 0.9;
+}
+
+.section3-wellness-features-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 900px;
+    background-color: var(--accent-pink);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.section3-feature-item {
+    text-align: center;
+    flex: 1;
+    color: var(--secondary-color);
+}
+.section3-feature-icon {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section3-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    padding: 25px 0;
+}
+.section3-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+}
+.section3-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.section3-footer-logo-circle {
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 5px;
+}
+.section3-footer-logo-text {
+    font-weight: bold;
+}
+.section3-social-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+.section3-footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+@media (max-width: 992px) {
+    .section3-food-quote-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .section3-food-illustration {
+        order: -1;
+    }
+    .section3-quote-features {
+        flex-direction: column;
+    }
+    .section3-quote-item {
+        justify-content: center;
+        text-align: left;
+    }
+    .section3-small-icon {
+        flex-shrink: 0;
+    }
+
+    .section3-wellness-banner-wrapper {
+        padding-bottom: 300px; 
+    }
+    .section3-wellness-features-box {
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 20px 10px;
+    }
+    .section3-feature-item {
+        flex: 1 1 45%; 
+        margin: 10px 0;
+    }
+
+    .section3-footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .section3-footer-left {
+        flex-direction: column;
+    }
+    .section3-social-links {
+        margin-top: 10px;
+    }
+    .section3-footer-right a {
+        margin: 0 10px;
+    }
+        .section2-wellbeing-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .section2-wellbeing-illustration {
+        order: -1;
+        max-width: 250px;
+        margin-bottom: 30px;
+    }
+    .section2-feature-column {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section2-feature-item {
+        text-align: center;
+    }
+    .section2-icon-box {
+        margin: 0 auto 15px;
+    }
+
+    .section2-produce-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section2-produce-image, .section2-produce-text-content {
+        max-width: 100%;
+    }
+    .section2-produce-image img {
+        height: 350px;
+    }
+    
+    .section2-produce-list {
+        text-align: left;
+    }
+    .section2-produce-list .section2-list-item {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .section2-wellbeing-section h2, .section2-produce-text-content h2 {
+        font-size: 1.8em;
+    }
+    .section2-produce-image img {
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-image-item {
+        max-width: 100%;
+    }
+    .hero-image-item img {
+        height: 300px; 
+    }
+}
