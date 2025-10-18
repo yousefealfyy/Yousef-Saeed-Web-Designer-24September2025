@@ -32,6 +32,7 @@
   .page {
     width: 100%;
     display: flex;
+    margin-top: 3%;
     justify-content: center;
   }
 
@@ -115,4 +116,5 @@
   .card span {
     color: #f7b03b;
     font-weight: 500;
+
   }
