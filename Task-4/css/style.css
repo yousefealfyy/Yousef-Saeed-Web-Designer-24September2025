@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 80%;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -36,21 +36,19 @@ body {
     align-items: center;
 }
 .logo-icon {
-    font-size: 1.5em;
-    color: var(--logo-color);
-    margin-right: 5px;
+    margin-right: 15px;
 }
 .nav-links {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
-    gap: 30px;
+    gap: 35px;
 }
 .nav-links a {
     text-decoration: none;
     color: var(--link-color);
-    font-size: 0.95em;
+    font-size: 0.85em;
     transition: color 0.3s;
 }
 .nav-links a:hover {
@@ -62,26 +60,27 @@ body {
     text-align: center;
 }
 .hero-section h1 {
-    font-size: 2.5em;
-    font-weight: 800; 
+    width: 101%;
+    font-size: 4em;
+    font-weight: 600;
     color: var(--primary-text-color);
     margin-bottom: 20px;
     line-height: 1.1;
+    margin: 20px 0 20px;
 }
 .hero-description {
     color: var(--link-color);
-    max-width: 600px;
+    max-width: 790px;
     margin: 0 auto 30px;
-    font-size: 1.05em;
+    font-size: 1em;
 }
-
 
 .cta-button {
     background-color: var(--button-bg);
     color: white;
     border: none;
-    padding: 12px 35px;
-    border-radius: 8px;
+    padding: 9px 53px;
+    border-radius: 22px;
     font-size: 1.05em;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -98,7 +97,7 @@ body {
 }
 .hero-image-item {
     flex: 1;
-    max-width: 500px;
+    max-width: 575px;
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
@@ -111,20 +110,23 @@ body {
 }
 
 .section2-wellbeing-section {
-    padding: 60px 0 80px;
-    background-color: var(--light-gray, #f8f8f8); 
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px 0 80px;
+    background-color: #eeeeee;
 }
 .section2-wellbeing-section h2 {
-    font-size: 2.2em;
+    padding: 0 0 15px;
+    font-size: 2.7em;
     font-weight: 700;
     color: var(--primary-text-color, #212529);
-    margin-bottom: 40px;
+    margin: 40px 73px;
 }
 .section2-wellbeing-content {
+    padding: 0 0px 0 75px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
+    width: 65%;
 }
 .section2-wellbeing-features {
     flex: 2;
@@ -136,6 +138,7 @@ body {
 }
 .section2-wellbeing-illustration img {
     width: 100%;
+    margin-left: 209px;
     height: auto;
     display: block;
 }
@@ -241,7 +244,7 @@ body {
     padding: 60px 0;
     background-color: var(--light-gray, #f8f8f8);
     border-radius: 8px; 
-    max-width: 1100px;
+    max-width: 1185px;
     margin: 40px auto;
 }
 .section3-food-quote-content {
@@ -328,6 +331,12 @@ body {
     max-width: 600px;
 }
 .section3-banner-logo {
+    height: 46px;
+    margin: 0 auto;
+    padding: 4px;
+    width: 9%;
+    border-radius: 7px;
+    border: 1px solid;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -339,9 +348,9 @@ body {
     margin-bottom: 25px;
 }
 .section3-cta-button {
-    background-color: white;
-    color: var(--secondary-color);
-    border: none;
+    background-color: #ffffff00;
+    color: #ffffff;
+    border: 1px solid;
     padding: 12px 30px;
     border-radius: 8px;
     font-size: 1.05em;
@@ -354,7 +363,7 @@ body {
 
 .section3-wellness-features-box {
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -373,9 +382,13 @@ body {
     color: var(--secondary-color);
 }
 .section3-feature-icon {
+    width: 47px;
+    height: 47px;
+    border: 1px solid;
+    border-radius: 50%;
     font-size: 2em;
-    display: block;
-    margin-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 11px;
 }
 
 .section3-footer {
@@ -414,128 +427,56 @@ body {
     margin-left: 25px;
 }
 
-
-@media (max-width: 992px) {
-    .section3-food-quote-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-    .section3-food-illustration {
-        order: -1;
-    }
-    .section3-quote-features {
-        flex-direction: column;
-    }
-    .section3-quote-item {
-        justify-content: center;
-        text-align: left;
-    }
-    .section3-small-icon {
-        flex-shrink: 0;
-    }
-
-    .section3-wellness-banner-wrapper {
-        padding-bottom: 300px; 
-    }
-    .section3-wellness-features-box {
-        width: 90%;
-        flex-wrap: wrap;
-        padding: 20px 10px;
-    }
-    .section3-feature-item {
-        flex: 1 1 45%; 
-        margin: 10px 0;
-    }
-
-    .section3-footer-content {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    .section3-footer-left {
-        flex-direction: column;
-    }
-    .section3-social-links {
-        margin-top: 10px;
-    }
-    .section3-footer-right a {
-        margin: 0 10px;
-    }
-        .section2-wellbeing-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .section2-wellbeing-illustration {
-        order: -1;
-        max-width: 250px;
-        margin-bottom: 30px;
-    }
-    .section2-feature-column {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .section2-feature-item {
-        text-align: center;
-    }
-    .section2-icon-box {
-        margin: 0 auto 15px;
-    }
-
-    .section2-produce-layout {
-        flex-direction: column;
-        text-align: center;
-    }
-    .section2-produce-image, .section2-produce-text-content {
-        max-width: 100%;
-    }
-    .section2-produce-image img {
-        height: 350px;
-    }
-    
-    .section2-produce-list {
-        text-align: left;
-    }
-    .section2-produce-list .section2-list-item {
-        justify-content: center;
-        align-items: flex-start;
-    }
-    
-}
-
-
-@media (max-width: 600px) {
-    .section2-wellbeing-section h2, .section2-produce-text-content h2 {
-        font-size: 1.8em;
-    }
-    .section2-produce-image img {
-        height: 280px;
-    }
-}
-
-
 @media (max-width: 768px) {
-    .navbar-content {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .nav-links {
-        gap: 15px;
-    }
-    
-    .hero-section h1 {
-        font-size: 2.5em;
-    }
-    
-    .hero-images {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .hero-image-item {
-        max-width: 100%;
-    }
-    .hero-image-item img {
-        height: 300px; 
-    }
+  img[src*="Illustration 2.png"],
+  img[src*="Group.png"] {
+    display: none;
+  }
+
+  .container, section, .content, .hero, .cards, .title {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  button, .btn {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  img[src*="Illustration 2.png"],
+  img[src*="Group.png"] {
+    display: none;
+  }
+
+  .container, section, .content, .hero, .cards, .title {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title h2 {
+    font-size: 1.2rem;
+  }
+
+  button, .btn {
+    width: 100%;
+    font-size: 0.85rem;
+  }
 }
