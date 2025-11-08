@@ -1,0 +1,958 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/svg+xml" href="../Final-Project/image/favicon.png">
+        <title>Doccure</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <section class="position-sticky">
+        <nav class="navbar navbar-expand-lg mx-auto w-spec">
+          <div class="container-fluid">
+            
+            <a class="navbar-brand me-5" href="#">
+      <img src="../Final-Project/image/logo.png" alt="Doccure" width="160" height="41">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse me-1 mb-1" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link text-primary text-nav" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Home
+            <i class="fas fa-chevron-down ps-2 pe-link text-primary fs-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Doctor Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Appointments</a></li>
+            <li><a class="dropdown-item" href="#">Available Timing</a></li>
+            <li><a class="dropdown-item" href="#">Patients List</a></li>
+            <li><a class="dropdown-item" href="#">Patient Profile</a></li>
+            <li><a class="dropdown-item" href="#">Chat</a></li>
+            <li><a class="dropdown-item" href="#">Invoice</a></li>
+            <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+            <li><a class="dropdown-item" href="#">Reviews</a></li>
+            <li><a class="dropdown-item" href="#">Doctor Register</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-dark text-nav" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Doctors
+          <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Doctor Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Appointments</a></li>
+            <li><a class="dropdown-item" href="#">Available Timing</a></li>
+            <li><a class="dropdown-item" href="#">Patients List</a></li>
+            <li><a class="dropdown-item" href="#">Patient Profile</a></li>
+            <li><a class="dropdown-item" href="#">Chat</a></li>
+            <li><a class="dropdown-item" href="#">Invoice</a></li>
+            <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+            <li><a class="dropdown-item" href="#">Reviews</a></li>
+            <li><a class="dropdown-item" href="#">Doctor Register</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Patients
+          <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Doctor Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Doctors</a></li>
+            <li><a class="dropdown-item" href="#">Search Doctors</a></li>
+            <li><a class="dropdown-item" href="#">Doctor Profile</a></li>
+            <li><a class="dropdown-item" href="#">Booking</a></li>
+            <li><a class="dropdown-item" href="#">Checkout</a></li>
+            <li><a class="dropdown-item" href="#">Booking Success</a></li>
+            <li><a class="dropdown-item" href="#">Favourites</a></li>
+            <li><a class="dropdown-item" href="#">Chat</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Pharmacy
+          <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+            <li><a class="dropdown-item" href="#">Pharmacy Search</a></li>
+            <li><a class="dropdown-item" href="#">Product</a></li>
+            <li><a class="dropdown-item" href="#">Product Description</a></li>
+            <li><a class="dropdown-item" href="#">Cart</a></li>
+            <li><a class="dropdown-item" href="#">Product Checkout</a></li>
+            <li><a class="dropdown-item" href="#">Payment Success</a></li>
+            <li><a class="dropdown-item" href="#">Pharmacy Register</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Pages
+          <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            <li><a class="dropdown-item" href="#">Other Pages</a></li>
+            <li><a class="dropdown-item" href="#">Authentication</a></li>
+            <li><a class="dropdown-item" href="#">Error</a></li>
+            <li><a class="dropdown-item" href="#">Hospitals</a></li>
+            <li><a class="dropdown-item" href="#">Speciality</a></li>
+            <li><a class="dropdown-item" href="#">Clinic</a></li>
+            <li><a class="dropdown-item" href="#">Call</a></li>
+            <li><a class="dropdown-item" href="#">Invoices</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Blog
+          <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog List</a></li>
+            <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+            <li><a class="dropdown-item" href="#">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown ">
+          <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Admin
+          <i class="fas fa-chevron-down ps-1 pe-link fs-icon"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Admin</a></li>
+            <li><a class="dropdown-item" href="#">Pharmacy Admin</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="d-flex pe-3 pt-1">
+        <a class="btn btn-dark-1 me-2 rounded-pill ps-special pe-3 py-2 fw-medium" href="#">Register</a>
+        <a class="btn btn-gradient rounded-pill ps-special pe-3 py-2 fw-medium" href="#">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</section>
+ 
+<section class="bg-spec h-100">
+  <div class="w-spec mx-auto position-relative">
+    <div class="m-hero">
+      <h2 class="fs-big w-50 fw-bold">Consult <span class="text-primary">Best Doctors</span> Your Nearby Location.</h2>
+      <p class="fs-4 text-primary-emphasis fw-semibold">Embark on your healing journey with Doccure</p>
+      <a class="btn-btn btn-gradient rounded-pill" href="">Start a Consult</a>
+      <img src="../Final-Project/image/down-arrow-img.png" alt="" class="">
+    </div>
+    <div class="search-box mt-5 position-sticky z-2 border">
+      <input type="text" class="form-control border-0" placeholder="Search doctors, clinics, hospitals, etc">
+      <span class="divider"></span>
+      <input type="text" class="form-control border-0" placeholder="Location">
+      <span class="divider"></span>
+      <input type="text" id="fromDate"  class="form-control border-0" placeholder="From">
+      <button class="btn btn-gradient rounded-pill px-4 py-2 fw-semibold">Search</button>
+    </div>
+    <div class="position-absolute top-0 start-o banner">
+      <img src="../Final-Project/image/banner-img.png" alt="">
+    </div>
+    <div class="position-absolute top-0 start-0 plus">
+      <img src="../Final-Project/image/imgi_18_header-icon.svg" alt="">
+    </div>
+    <div class="check-option z-3 position-absolute d-inline-flex bg-white top-0 end-0">
+      <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+      <span>Regular Check-up</span>
+    </div>
+    <div class="wave-container z-3 position-absolute top-0 end-0">
+  <img src="../Final-Project/image/imgi_22_banner-img2.svg" alt="wave background" class="wave-img">
+</div>
+  </div>
+  </section>
+
+<section class="specialities-section py-5 position-relative">
+  <div class="container position-relative">
+    
+    <div class="row justify-content-center mb-5 w-100 top-row">
+      <div class="col-6 col-md-4 col-lg-2 me-2 ms-0 speciality-card top-card bg-white rounded-2 p-4 border">
+        <img src="../Final-Project/image/imgi_24_service-01.svg" class="icon-top mb-3" alt="">
+        <h5 class="w-75 mx-auto text-center top-title">Book Appointment</h5>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 me-2 speciality-card top-card bg-white rounded-2 p-4 border">
+        <img src="../Final-Project/image/imgi_25_service-02.svg" class="icon-top mb-3" alt="">
+        <h5 class="w-75 mx-auto text-center top-title">Lab Test Services</h5>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 me-2 speciality-card top-card bg-white rounded-2 p-4 border">
+        <img src="../Final-Project/image/imgi_26_service-03.svg" class="icon-top mb-3" alt="">
+        <h5 class="w-75 mx-auto text-center top-title">Medicines & supplies</h5>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 me-2 speciality-card top-card bg-white rounded-2 p-4 border">
+        <img src="../Final-Project/image/imgi_27_service-04.svg" class="icon-top mb-3" alt="">
+        <h5 class="w-75 mx-auto text-center top-title">Hospitals / Clinics</h5>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 me-2 speciality-card top-card bg-white rounded-1 p-4 border">
+        <img src="../Final-Project/image/imgi_28_service-05.svg" class="icon-top mb-3" alt="">
+        <h5 class="w-75 mx-auto text-center top-title">Health Care Services</h5>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 me-2 speciality-card top-card bg-white rounded-2 p-4 border">
+        <img src="../Final-Project/image/imgi_29_service-06.svg" class="icon-top mb-3" alt="">
+        <h5 class="w-75 mx-auto text-center top-title">Talk to Doctors</h5>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 speciality-card top-card bg-white rounded-2 p-4 border">
+        <img src="../Final-Project/image/imgi_30_service-07.svg" class="icon-top mb-3" alt="">
+        <h5 class="w-75 mx-auto text-center top-title">Home Care Services</h5>
+      </div>
+    </div>
+
+    <div class="specialities-title d-flex align-items-center justify-content-between my-5">
+      <div class="d-flex align-items-center">
+        <h2 class="fw-bold me-2 section-title">Specialities
+          <img src="../Final-Project/image/imgi_18_header-icon.svg" class="plus-icon-1 position-absolute" alt="plus icon">
+        </h2>
+      </div>
+
+      <div class="d-flex align-items-center gap-5 arrow-wrapper">
+        <button class="btn btn-light rounded-circle arrow-btn left-arrow me-3" aria-label="left">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="btn btn-light rounded-circle arrow-btn right-arrow" aria-label="right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="bottom-wrapper position-relative my-3 w-100 overflow-hidden">
+       <div class="row justify-content-center g-4 bottom-row w-100">
+        <div class="col-6 col-md-4 col-lg-2 speciality-card bottom-card bg-white rounded-2 py-3 px-5 border">
+          <div class="icon-bottom mt-3 mb-3">
+            <img src="../Final-Project/image/imgi_32_specialities-03.svg" alt="">
+          </div>
+          <h5 class="fw-semibold mb-3 bottom-title text-center ">Urology</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 speciality-card bottom-card bg-white rounded-2 py-3 px-5 border">
+          <div class="icon-bottom mt-3 mb-3 mx-3">
+            <img src="../Final-Project/image/imgi_33_specialities-04.svg" alt="">
+          </div>
+          <h5 class="fw-semibold mb-3 mx-3 bottom-title text-center ">Orthopedic</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 speciality-card bottom-card bg-white rounded-2 py-3 px-5 border">
+          <div class="icon-bottom mt-3 mb-3 mx-3">
+            <img src="../Final-Project/image/imgi_31_specialities-02.svg" alt="">
+          </div>
+          <h5 class="fw-semibold mb-3 bottom-title text-center ">Neurology</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 speciality-card bottom-card bg-white rounded-2 py-3 px-5 border">
+          <div class="icon-bottom mt-3 mb-3 mx-3">
+            <img src="../Final-Project/image/imgi_35_specialities-06.svg" alt="">
+          </div>
+          <h5 class="fw-semibold mb-3 bottom-title text-center ">Ophthalmology</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 speciality-card bottom-card bg-white rounded-2 py-3 px-5 border">
+          <div class="icon-bottom mt-3 mb-3 mx-3">
+            <img src="../Final-Project/image/imgi_34_specialities-05.svg" alt="">
+          </div>
+          <h5 class="fw-semibold mb-3 bottom-title text-center">Cardiology</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 speciality-card bottom-card bg-white rounded-2 py-3 px-5 border">
+          <div class="icon-bottom mt-3 mb-3 mx-3">
+            <img src="../Final-Project/image/imgi_36_specialities-01.svg" alt="">
+          </div>
+          <h5 class="fw-semibold mb-3 bottom-title text-center">Dentist</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-5">
+  <a href="#" class="btn btn-primary view-all-btn py-2">
+    See All Specialities.
+  </a>
+</div>
+</section>
+
+<section class="best-doctors-section py-5">
+  <div class="container">
+    <div class="section-header d-flex align-items-center mb-4 position-relative">
+      <h2 class="fw-bold mx-auto">Best Doctors</h2>
+      <img src="../Final-Project/image/imgi_18_header-icon.svg" class="plus-icon-2 position-absolute top-0 start-0 translate-middle" alt="plus icon">
+    </div>
+
+    <div class="doctor-slider overflow-hidden position-relative">
+      
+      <div class="col-6 col-md-4 col-lg-3">
+  <div class="doctor-card bg-white rounded-3 p-3 position-relative overflow-hidden border">
+    <div class="doctor-img position-relative overflow-hidden rounded-3">
+      <img src="../Final-Project/image/imgi_37_doctor-02.jpg" class="img-fluid w-100 doctor-photo" alt="Doctor">
+      <span class="price position-absolute top-0 end-0 m-2 bg-primary text-white px-2 py-1 rounded-pill">$300</span>
+      <span class="white-flash position-absolute top-0 start-0 w-100 h-100"></span>
+    </div>
+    <div class="doctor-info mt-3">
+      <h5 class="doctor-name fw-semibold mb-1">Dr. John Doe</h5>
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <p class="mb-0 text-muted small">Dentist</p>
+      <div class="rating">
+        <i class="fa-solid fa-star text-warning me-1"></i>
+        <span class="small text-muted">4.3</span>
+        <p class="ms-1 mb-0 small text-muted">(45)</p>
+      </div>
+      </div>
+
+      <div class="border-bottom mb-2"></div>
+      <p class="text-muted mb-1 small">
+        <i class="fa-solid fa-location-dot me-1"></i>Austin, TX
+      </p>
+      <p class="text-success mb-0 small">• Available</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3">
+  <div class="doctor-card bg-white rounded-3 p-3 position-relative overflow-hidden border">
+    <div class="doctor-img position-relative overflow-hidden rounded-3">
+      <img src="../Final-Project/image/imgi_38_doctor-04.jpg" class="img-fluid w-100 doctor-photo" alt="Doctor">
+      <span class="price position-absolute top-0 end-0 m-2 bg-primary text-white px-2 py-1 rounded-pill">$100</span>
+      <span class="white-flash position-absolute top-0 start-0 w-100 h-100"></span>
+    </div>
+    <div class="doctor-info mt-3">
+      <h5 class="doctor-name fw-semibold mb-1">Dr. Aviles</h5>
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <p class="mb-0 text-muted small">Neurology</p>
+      <div class="rating">
+        <i class="fa-solid fa-star text-warning me-1"></i>
+        <span class="small text-muted">4.0</span>
+        <p class="ms-1 mb-0 small text-muted">(20)</p>
+      </div>
+      </div>
+      <div class="border-bottom mb-2"></div>
+      <div class="location-status mt-1">
+        <p class="text-muted mb-0 small">
+        <i class="fa-solid fa-location-dot me-1"></i>New York, USA
+        </p>
+        <p class="text-success mb-0 small">• Available</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3">
+  <div class="doctor-card bg-white rounded-3 p-3 position-relative overflow-hidden border">
+    <div class="doctor-img position-relative overflow-hidden rounded-3">
+      <img src="../Final-Project/image/imgi_39_doctor-05.jpg" class="img-fluid w-100 doctor-photo" alt="Doctor">
+      <span class="price position-absolute top-0 end-0 m-2 bg-primary text-white px-2 py-1 rounded-pill">$250</span>
+      <span class="white-flash position-absolute top-0 start-0 w-100 h-100"></span>
+    </div>
+    <div class="doctor-info mt-3">
+      <h5 class="doctor-name fw-semibold mb-1">Dr. Palmore</h5>
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <p class="mb-0 text-muted small">Immunologist</p>
+      <div class="rating">
+        <i class="fa-solid fa-star text-warning me-1"></i>
+        <span class="small text-muted">4.5</span>
+        <p class="ms-1 mb-0 small text-muted">(35)</p>
+      </div>
+      </div>
+
+      <div class="border-bottom mb-2"></div>
+      <div class="location-status mt-1">
+        <p class="text-muted mb-0 small">
+        <i class="fa-solid fa-location-dot me-1"></i>Waipahu, HI
+        </p>
+        <p class="text-success mb-0 small">• Available</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3">
+  <div class="doctor-card bg-white rounded-3 p-3 position-relative overflow-hidden border">
+    <div class="doctor-img position-relative overflow-hidden rounded-3">
+      <img src="../Final-Project/image/imgi_40_doctor-01.jpg" class="img-fluid w-100 doctor-photo" alt="Doctor">
+      <span class="price position-absolute top-0 end-0 m-2 bg-primary text-white px-2 py-1 rounded-pill">$880</span>
+      <span class="white-flash position-absolute top-0 start-0 w-100 h-100"></span>
+    </div>
+    <div class="doctor-info mt-3">
+      <h5 class="doctor-name fw-semibold mb-1">Dr. Paul Richard</h5>
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <p class="mb-0 text-muted small">Dentist</p>
+      <div class="rating">
+        <i class="fa-solid fa-star text-warning me-1"></i>
+        <span class="small text-muted">4.4</span>
+        <p class="ms-1 mb-0 small text-muted">(50)</p>
+      </div>
+      </div>
+      <div class="border-bottom mb-2"></div>
+      <div class="location-status mt-1">
+        <p class="text-muted mb-0 small">
+        <i class="fa-solid fa-location-dot me-1"></i>California, USA
+        </p>
+        <p class="text-success mb-0 small">• Available</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3">
+  <div class="doctor-card bg-white rounded-3 p-3 position-relative overflow-hidden border">
+    <div class="doctor-img position-relative overflow-hidden rounded-3">
+      <img src="../Final-Project/image/imgi_41_doctor-03.jpg" class="img-fluid w-100 doctor-photo" alt="Doctor">
+      <span class="price position-absolute top-0 end-0 m-2 bg-primary text-white px-2 py-1 rounded-pill">$200</span>
+      <span class="white-flash position-absolute top-0 start-0 w-100 h-100"></span>
+    </div>
+    <div class="doctor-info mt-3">
+      <h5 class="doctor-name fw-semibold mb-1">Dr. Brown</h5>
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <p class="mb-0 text-muted small">Orthopedic</p>
+      <div class="rating">
+        <i class="fa-solid fa-star text-warning me-1"></i>
+        <span class="small text-muted">4.5</span>
+        <p class="ms-1 mb-0 small text-muted">(35)</p>
+      </div>
+      </div>
+      <div class="border-bottom mb-2"></div>
+      <div class="location-status mt-1">
+        <p class="text-muted mb-0 small">
+        <i class="fa-solid fa-location-dot me-1"></i>New York, USA
+        </p>
+        <p class="text-success mb-0 small">• Available</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section py-5 position-relative">
+  <div class="container text-center position-relative">
+    <h2 class="mx-auto position-relative mb-5 fw-bold">
+      Pricing Plan
+      <img src="../Final-Project/image/imgi_18_header-icon.svg" alt="plus" class="position-absolute plus-icon-3">
+    </h2>
+
+    <div class="row justify-content-center gy-3 gx-3">
+
+      <div class="col-md-3">
+        <div class="pricing-card text-center p-4 position-relative basic mt-4">
+          <div class="icon-wrapper position-relative ms-3 mb-3 d-flex">
+            <div class="icon-bg"></div>
+            <img src="../Final-Project/image/imgi_42_price-icon1.svg" alt="icon" class="icon-img">
+            <h5 class="fw-bold fs-3 ms-4 mt-2">Basic</h5>
+          </div>
+          <div class="pr">
+          <h2 class="fs-1 fw-bold text-start mt-4">$99<span class=" fs-7 ms-2 mt-3 text-start text-body-tertiary">/monthly</span></h2>
+          <h6 class="mt-4 text-start text-black fw-semibold">What’s included</h6>
+          <ul class="list-unstyled mt-3 text-start d-inline-block">
+            <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> Profile Creation</li>
+            <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> Appointment Booking</li>
+            <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> Notification Alerts</li>
+            <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> Limited Telemedicine Access</li>
+          </ul>
+          </div>
+          <button class="btn w-100 mt-3 choose-btn">Choose Plan</button>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="rounded-4 text-center p-4 position-relative pro">
+          <span class="badge-popular position-absolute">Popular</span>
+          <div class="icon-wrapper position-relative ms-3 mb-3 d-flex">
+            <div class="icon-bg"></div>
+            <img src="../Final-Project/image/imgi_43_price-icon2.svg" alt="icon" class="icon-img d-flex">
+            <h5 class="fw-bold text-white fs-3 ms-4 mt-2">Pro</h5>
+          </div>
+          <h2 class="fs-1 fw-bold text-start text-white mt-4">$199<span class=" fs-7 ms-2 mt-3 text-start text-body-tertiary">/monthly</span></h2>
+          <h6 class="mt-4 text-start text-white fw-semibold">What’s included</h6>
+          <ul class="list-unstyled mt-3 text-start d-inline-block">
+            <li><i class="fa-solid mb-3 fa-circle-check text-white me-2"></i> Profile Creation</li>
+            <li><i class="fa-solid mb-3 fa-circle-check text-white me-2"></i> Appointment Booking</li>
+            <li><i class="fa-solid mb-3 fa-circle-check text-white me-2"></i> Notification Alerts</li>
+            <li><i class="fa-solid mb-3 fa-circle-check text-white me-2"></i> Extended Telemedicine Access</li>
+            <li><i class="fa-solid mb-3 fa-circle-check text-white me-2"></i> Exclusive Discounts</li>
+            <li><i class="fa-solid mb-3 fa-circle-check text-white me-2"></i> Appointment History</li>
+            <li><i class="fa-solid fa-circle-check text-white me-2"></i> Priority Customer Support</li>
+          </ul>
+          <button class="btn w-100 mt-3 fw-bold .text-primary-emphasis border border-0 rounded-pill bg-white">Choose Plan</button>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="pricing-card text-center p-4 position-relative enterprise  mt-4">
+          <div class="icon-wrapper position-relative ms-3 mb-3 d-flex">
+            <div class="icon-bg"></div>
+            <img src="../Final-Project/image/imgi_44_price-icon3.svg" alt="icon" class="icon-img mx-1">
+            <h5 class="fw-bold fs-3 ms-4 mt-2">Enterprise</h5>
+          </div>
+          <div class="pr">
+            <h2 class="fs-1 fw-bold text-start mt-4">$399<span class=" fs-7 ms-2 mt-3 text-start text-body-tertiary">/monthly</span></h2>
+            <h6 class="mt-4 fw-semibold text-start">What’s included</h6>
+            <ul class="list-unstyled mt-3 text-start d-inline-block">
+              <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> All Basic Plan Features</li>
+              <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> All Premium Plan Features</li>
+              <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> Personalized Health Insights</li>
+              <li><i class="fa-solid fa-circle-check mb-3 text-primary me-2"></i> Family Account Management</li>
+            </ul>
+          </div>
+          <button class="btn w-100 mt-3 choose-btn">Choose Plan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works-section py-5 position-relative">
+  <div class="container">
+    <div class="row align-items-center g-4">
+    <div class="col-lg-5 text-center">
+        <img src="../Final-Project/image/imgi_45_work-img.png" alt="Doctor" class="img-fluid how-img">
+      </div>
+      <div class="col-6">
+    <div class="mb-3 position-relative">
+      <h5 class="text-primary fw-semibold">How It Works</h5>
+      <h2 class="fw-bold position-relative d-inline-block">
+        4 Easy Steps To Get Your Solution
+        <img src="../Final-Project/image/imgi_18_header-icon.svg" alt="plus" class="position-absolute plus-icon-4">
+      </h2>
+    </div>
+      
+      <div class="col-lg-6 w-100">
+        <div class="row g-4">
+          <!-- Step 1 -->
+          <div class="col-sm-6">
+            <div class="step-card text-center p-3">
+              <div class="icon-square mx-auto mb-3 position-relative">
+                <img src="../Final-Project/image/imgi_46_work-01.svg" alt="Search Doctor" class="icon-img">
+              </div>
+              <div class="step-card-info">
+                <h6 class="fw-bold">Search Doctor</h6>
+                <p class="text-muted small">Search for a doctor based on specialization, location, or availability.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-sm-6">
+            <div class="step-card text-center p-3">
+              <div class="icon-square mx-auto mb-3 position-relative">
+                <img src="../Final-Project/image/imgi_47_work-02.svg" alt="Check Profile" class="icon-img">
+              </div>
+              <div class="step-card-info">                
+                <h6 class="fw-bold">Check Doctor Profile</h6>
+                <p class="text-muted small">Explore detailed doctor profiles on our platform to make informed healthcare decisions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-sm-6">
+            <div class="step-card text-center p-3">
+              <div class="icon-square mx-auto mb-3 position-relative">
+                <img src="../Final-Project/image/imgi_48_work-03.svg" alt="Schedule Appointment" class="icon-img">
+              </div>
+              <div class="step-card-info">
+                <h6 class="fw-bold">Schedule Appointment</h6>
+                <p class="text-muted small">After choose your preferred doctor, select a convenient time slot, & confirm your appointment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-sm-6">
+            <div class="step-card text-center p-3">
+              <div class="icon-square mx-auto mb-3 position-relative">
+                <img src="../Final-Project/image/imgi_49_work-04.svg" alt="Get Your Solution" class="icon-img">
+              </div>
+              <div class="step-card-info">
+                <h6 class="fw-bold">Get Your Solution</h6>
+                <p class="text-muted small">Discuss your health concerns with the doctor and receive personalized advice & solution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="latest-articles-section py-5 position-relative">
+  <div class="container">
+    <div class="text-center mb-5 position-relative">
+      <h2 class="fw-bold position-relative d-inline-block mx-auto">
+        Latest Articles
+        <img src="../Final-Project/image/imgi_18_header-icon.svg" alt="plus" class="position-absolute plus-icon-5">
+      </h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Article 1 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="article-card position-relative overflow-hidden border rounded-4">
+          <div class="article-img-wrapper d-flex ms-3">
+            <img src="../Final-Project/image/imgi_50_blog-11.jpg" alt="Article 1" class="img-fluid article-img">
+            <div class="overlay"></div>
+          </div>
+          <div class="article-info p-3">
+            <span>John Doe</span>
+            <span>13 Aug, 2023</span>
+            <p class="small mb-1 fw-semibold">Navigating Telehealth: A Guide to Virtual Healthcare Visits</p>
+            <h5 class="">Explore the benefits & challenges of virtual healthcare appointments, along with tips for making good health.</h5>
+            <button class="read-more-btn border border-primary rounded-pill px-2 py-1">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="article-card position-relative overflow-hidden border rounded-4">
+          <div class="article-img-wrapper d-flex ms-3">
+            <img src="../Final-Project/image/imgi_51_blog-24.jpg" alt="Article 2" class="img-fluid article-img">
+            <div class="overlay"></div>
+          </div>
+          <div class="article-info p-3">
+            <span>Darren Elder</span>
+            <span>10 Sep, 2023</span>
+            <p class="small mb-1 fw-semibold">Work-Life Harmony: Balancing Career and Personal Wellness</p>
+            <h5 class="">Uncover strategies to achieve a harmonious balance between professional commitments and personal well-...</h5>
+            <button class="read-more-btn border border-primary rounded-pill px-2 py-1">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="article-card position-relative overflow-hidden border rounded-4">
+          <div class="article-img-wrapper d-flex ms-3">
+            <img src="../Final-Project/image/imgi_52_blog-25.jpg" alt="Article 3" class="img-fluid article-img">
+            <div class="overlay"></div>
+          </div>
+          <div class="article-info p-3">
+            <span>Ruby Perrin</span>
+            <span>30 Oct, 2023</span>
+            <p class="small mb-1 fw-semibold">Sleep Solutions: Unveiling the Secrets to a Restful Night</p>
+            <h5 class="">Explore importance of quality sleep & learn tips to improve your sleep, ensuring you wake up refreshed & ready to fac...</h5>
+            <button class="read-more-btn border border-primary rounded-pill px-2 py-1">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="article-card position-relative overflow-hidden border rounded-4">
+          <div class="article-img-wrapper d-flex ms-3">
+            <img src="../Final-Project/image/imgi_53_blog-12.jpg" alt="Article 4" class="img-fluid article-img">
+            <div class="overlay"></div>
+          </div>
+          <div class="article-info p-3">
+           <span>Sofia Brient</span>
+           <span>08 Nov, 2023</span>
+           <p class="small mb-1 fw-semibold">Mental Wellness in a Digital Age: Strategies for a Healthy Mind Online</p>
+           <h5 class="">Delve into the impact of digital life on mental health & discover practical strategies to maintain mental well-being.</h5>
+           <button class="read-more-btn border border-primary rounded-pill px-2 py-1">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="apps-download w-app mx-auto border border-0 rounded-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="apps-download-content text-center p-5">
+          <h4 class="mb-2 text-white mt-5 text-start">Working for Your Better health.</h4>
+          <h3 class=" text-white">Download the Doccure App today!</h3>
+          <p class="mb-3 text-white text-start">Scan the QR to get the app now</p>
+          <div class="text-start mb-4">
+            <img src="../Final-Project/image/imgi_54_scan-img.png" alt="">
+          </div>
+          <div class=" text-start">
+            <img src="../Final-Project/image/imgi_55_google-play-icon.svg" class="bg-app" alt="App Store">
+            <img src="../Final-Project/image/imgi_56_app-store-icon.svg" class="bg-app" alt="Play Store">
+          </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="apps-download-img">            
+            <img src="../Final-Project/image/imgi_57_mobile-img.png" alt="">
+          </div>
+        </div>
+</section>
+
+<section class="faq-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div>        
+        <p class="text-primary fw-semibold mb-1">Get Your Answer</p>
+        <h3 class="fw-bold mb-4">Frequently Asked Questions
+          <img src="../Final-Project/image/imgi_18_header-icon.svg" class="plus-icon-6" alt="">
+        </h3>
+      </div>
+      <!-- Left Image -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 position-relative">
+        <div class="faq-image-wrapper position-relative">
+          <img src="../Final-Project/image/imgi_58_faq-img.png" alt="FAQ Doctor" class="img-fluid rounded-3">
+          <div class="happy-patients-box d-flex align-items-center justify-content-center rounded-3">
+            <span class="emoji">😊</span>
+            <div>
+              <h5 class="fw-bold mb-0">95k+</h5>
+              <p class="mb-0">Happy Patients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right FAQ Content -->
+      <div class="col-lg-6 col-md-12">
+        <div class="faq-content">
+
+          <div class="accordion">
+            <div class="faq-item">
+              <button class="faq-question">
+                How do I book an appointment with a doctor?
+                <span class="icon"></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, simply visit our website and log in or create an account.
+                  Search for a doctor based on specialization, location, or availability & confirm your booking.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I request a specific doctor when booking my appointment?
+                <span class="icon"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, during booking you can filter and choose a doctor according to your preference.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What should I do if I need to cancel or reschedule my appointment?
+                <span class="icon"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Log in to your account and go to “My Appointments” to cancel or reschedule easily.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What if I'm running late for my appointment?
+                <span class="icon"></span>
+              </button>
+              <div class="faq-answer">
+                <p>We recommend informing the doctor through your booking page to adjust your time slot.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I book appointments for family members or dependents?
+                <span class="icon"></span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, our system allows you to manage bookings for family members within your account.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section py-5">
+  <div class="container position-relative">
+
+    <!-- Left Arrow -->
+    <button class="arrow left" id="prevBtn">&#10094;</button>
+
+    <div class="row align-items-center">
+      <div class="col-12">
+
+        <!-- Slider Wrapper -->
+        <div class="testimonial-slider">
+
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center">
+                <img src="../Final-Project/image/imgi_60_client-11.jpg" class="testimonial-photo" alt="Client">
+              </div>
+              <div class="col-md-8">
+                <h5 class="text-primary">Testimonials</h5>
+                <h2 class="fw-bold d-flex align-items-center gap-2">
+                  What Our Client Says <img src="" class="plus-icon" alt="">
+                </h2>
+                <p>Doccure exceeded my expectations in healthcare. The seamless booking process and professional doctors truly set them apart.</p>
+                <h6 class="fw-semibold mb-0">John Doe <span class="text-muted fw-normal">• New York</span></h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center">
+                <img src="../Final-Project/image/imgi_61_client-01.jpg" class="testimonial-photo" alt="Client">
+              </div>
+              <div class="col-md-8">
+                <h5 class="text-primary">Testimonials</h5>
+                <h2 class="fw-bold d-flex align-items-center gap-2">
+                  What Our Client Says <img src="../Final-Project/image/imgi_18_header-icon.svg" class="plus-icon-7" alt="">
+                </h2>
+                <p>As a parent, organizing appointments can be overwhelming. Doccure made scheduling simple for my entire family.</p>
+                <h6 class="fw-semibold mb-0">Niya Patel <span class="text-muted fw-normal">• New York</span></h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center">
+                <img src="../Final-Project/image/imgi_62_client-03.jpg" class="testimonial-photo" alt="Client">
+              </div>
+              <div class="col-md-8">
+                <h5 class="text-primary">Testimonials</h5>
+                <h2 class="fw-bold d-flex align-items-center gap-2">
+                  What Our Client Says <img src="../Final-Project/image/imgi_18_header-icon.svg" class="plus-icon-7" alt="">
+                </h2>
+                <p>Booking appointments is now quick and effortless with Doccure. A real time-saver for working professionals.</p>
+                <h6 class="fw-semibold mb-0">Andrew Denner <span class="text-muted fw-normal">• Nevada</span></h6>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- slider-end -->
+      </div>
+    </div>
+
+    <!-- Right Arrow -->
+    <button class="arrow right" id="nextBtn">&#10095;</button>
+
+  </div>
+</section>
+
+<section class="partners-section py-5 text-center">
+  <div class="container">
+
+    <h2 class="fw-bold mb-4 d-flex justify-content-center align-items-center gap-2">
+      Our Partners <img src="../Final-Project/image/imgi_18_header-icon.svg" class="plus-icon-8" alt="">
+    </h2>
+
+    <div class="partners-wrapper position-relative">
+      <div class="partners-inner d-flex" id="partnersTrack">
+        <div class="partner-card border rounded-3 py-3 px-1 mx-2"><img src="../Final-Project/image/imgi_63_partners-1.svg" class="img-fluid rounded-3" alt=""></div>
+        <div class="partner-card border rounded-3 py-3 px-1 mx-2"><img src="../Final-Project/image/imgi_64_partners-2.svg" class="img-fluid rounded-3" alt=""></div>
+        <div class="partner-card border rounded-3 py-3 px-1 mx-2"><img src="../Final-Project/image/imgi_65_partners-3.svg" class="img-fluid rounded-3" alt=""></div>
+        <div class="partner-card border rounded-3 py-3 px-1 mx-2"><img src="../Final-Project/image/imgi_66_partners-4.svg" class="img-fluid rounded-3" alt=""></div>
+        <div class="partner-card border rounded-3 py-3 px-1 mx-2"><img src="../Final-Project/image/imgi_67_partners-5.svg" class="img-fluid rounded-3" alt=""></div>
+        <div class="partner-card border rounded-3 py-3 px-1 mx-2"><img src="../Final-Project/image/imgi_68_partners-6.svg" class="img-fluid rounded-3" alt=""></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer-section py-5">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Logo / Description -->
+      <div class="col-md-3">
+        <img src="../Final-Project/image/logo.png" alt="Logo" class="footer-logo mb-2 w-100 h-auto">
+        <p>Effortlessly schedule your medical appointments with Doccure. Connect with healthcare professionals & manage your time easily.</p>
+      </div>
+
+      <div class="col-md-1 me-3">
+        <ul class="footer-list hover-list">
+      <li class="fs-6 fw-semibold">Company</li>
+      <li class="fs-7"><p>Home</p></li>
+      <li class="fs-7"><p>Specialities</p></li>
+      <li class="fs-7"><p>Video Consult</p></li>
+    </ul>
+  </div>
+
+  <!-- LIST 2 -->
+  <div class="col-md-1 me-4">
+    <ul class="footer-list hover-list">
+      <li class="fs-6 fw-semibold"><p>Specialities</p></li>
+      <li class="fs-7"><p>Neurology</p></li>
+      <li class="fs-7"><p>Cardiologist</p></li>
+      <li class="fs-7"><p>Dentist</p></li>
+    </ul>
+  </div>
+
+  <!-- LIST 3 (STATIC) -->
+  <div class="col-md-2">
+    <ul class="footer-list static-list ms-2 me-5">
+      <li class="fs-6 fw-semibold">Contact Us</li>
+      <li class="fs-7 d-flex flex-nowrap"><i class="fa-solid fa-location-dot"></i><p class="flex-nowrap">3556 Beech Street</p></li>
+      <li class="fs-7 d-flex flex-nowrap"><i class="fa-solid fa-phone-volume"></i><p class="flex-nowrap">+1 315 369 5943</p></li>
+      <li class="fs-7 d-flex flex-nowrap"><i class="fa-solid fa-envelope"></i><p class="flex-nowrap">doccure@example.com</p></li>
+    </ul>
+  </div>
+      
+        <div class="col-md-3 ms-5">
+          <h5 class="fw-semibold mb-3">Join Our Newsletter</h5>
+
+          <div class="d-flex mb-4">
+            <input type="email" class="form-control" placeholder="Enter Email">
+            <button class="btn newsletter-btn">Submit</button>
+          </div>
+
+          <div class="d-flex gap-3 fs-5">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+
+    </div>
+</footer>
+<section class="bg-last py-3">
+  <div class="d-flex justify-content-between align-items-center container">
+    <p class="mb-0">Copyright © 2025 Doccure. All Rights Reserved</p>
+    <div>
+      <a href="#" class="text-decoration-none text-black border-end pe-2 me-2">Privacy Policy</a>
+      <a href="#" class="text-decoration-none text-black">Terms and Conditions</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
