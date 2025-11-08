@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="../Final-Project/image/favicon.png">
+    <title>Doccure</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="position-sticky">
+        <nav class="navbar navbar-expand-lg mx-auto w-spec">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand me-5" href="#">
+                    <img src="../Final-project-dashboard/image/imgi_1_logo-D7ILE4zi.svg" alt="Doccure" width="160"
+                        height="41">
+                </a>
+
+                <!-- Mobile Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse me-1 mb-1" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                                <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Doctor Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Appointments</a></li>
+                                <li><a class="dropdown-item" href="#">Available Timing</a></li>
+                                <li><a class="dropdown-item" href="#">Patients List</a></li>
+                                <li><a class="dropdown-item" href="#">Patient Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Chat</a></li>
+                                <li><a class="dropdown-item" href="#">Invoice</a></li>
+                                <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                <li><a class="dropdown-item" href="#">Doctor Register</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Doctors -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-primary text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Doctors
+                                <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Doctor Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Appointments</a></li>
+                                <li><a class="dropdown-item" href="#">Available Timing</a></li>
+                                <li><a class="dropdown-item" href="#">Patients List</a></li>
+                                <li><a class="dropdown-item" href="#">Patient Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Chat</a></li>
+                                <li><a class="dropdown-item" href="#">Invoice</a></li>
+                                <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                <li><a class="dropdown-item" href="#">Doctor Register</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Patients -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Patients
+                                <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Doctor Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Doctors</a></li>
+                                <li><a class="dropdown-item" href="#">Search Doctors</a></li>
+                                <li><a class="dropdown-item" href="#">Doctor Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Booking</a></li>
+                                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                <li><a class="dropdown-item" href="#">Booking Success</a></li>
+                                <li><a class="dropdown-item" href="#">Favourites</a></li>
+                                <li><a class="dropdown-item" href="#">Chat</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pharmacy -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pharmacy
+                                <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+                                <li><a class="dropdown-item" href="#">Pharmacy Search</a></li>
+                                <li><a class="dropdown-item" href="#">Product</a></li>
+                                <li><a class="dropdown-item" href="#">Product Description</a></li>
+                                <li><a class="dropdown-item" href="#">Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Product Checkout</a></li>
+                                <li><a class="dropdown-item" href="#">Payment Success</a></li>
+                                <li><a class="dropdown-item" href="#">Pharmacy Register</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pages -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                                <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Other Pages</a></li>
+                                <li><a class="dropdown-item" href="#">Authentication</a></li>
+                                <li><a class="dropdown-item" href="#">Error</a></li>
+                                <li><a class="dropdown-item" href="#">Hospitals</a></li>
+                                <li><a class="dropdown-item" href="#">Speciality</a></li>
+                                <li><a class="dropdown-item" href="#">Clinic</a></li>
+                                <li><a class="dropdown-item" href="#">Call</a></li>
+                                <li><a class="dropdown-item" href="#">Invoices</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Blog -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                                <i class="fas fa-chevron-down ps-2 pe-link fs-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog List</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Admin -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-black text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Admin
+                                <i class="fas fa-chevron-down ps-1 pe-link fs-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Admin</a></li>
+                                <li><a class="dropdown-item" href="#">Pharmacy Admin</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Right side buttons -->
+                    <ul class="nav header-navbar-rht ms-auto align-items-center">
+                        <li class="nav-item searchbar position-relative">
+                            <a class="nav-link" id="searchToggle" href="javascript:void(0)"><i
+                                    class="fa fa-search"></i></a>
+                            <div class="togglesearch" id="toggleSearchBox">
+                                <form class="d-flex">
+                                    <input class="form-control" type="search" placeholder="Search..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="nav-item header-theme">
+                            <a id="dark-mode-toggle" class="nav-link" href="javascript:void(0)"
+                                aria-label="toggle theme"><i id="darkIcon" class="fa-regular fa-sun"></i></a>
+                        </li>
+
+                        <li class="nav-item dropdown noti-nav">
+                            <a class="nav-link position-relative" href="#" id="notifDropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-regular fa-bell"></i>
+                                <span class="badge bg-danger rounded-pill position-absolute"
+                                style="top:-6px; right:-6px; font-size:10px">.</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notifDropdown">
+                                <li class="px-1 py-2">You have 3 new notifications</li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">New appointment booked</a></li>
+                                <li><a class="dropdown-item" href="#">Patient message</a></li>
+                                <li><a class="dropdown-item" href="#">Profile updated</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#"><i class="fa-regular fa-comment"></i><span class="badge bg-danger rounded-pill position-absolute"
+                                style="top:-6px; right:-6px; font-size:10px">.</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link position-relative" href="#" id="cartDropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="badge bg-primary rounded-pill position-absolute"
+                                    style="top:-6px; right:-6px; font-size:10px">.</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
+                                <li class="px-1 py-2">1 item in cart</li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">View cart</a></li>
+                                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- profile -->
+                        <li class="nav-item dropdown has-arrow logged-item">
+                            <a class="nav-link" href="#" id="profileDropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span class="user-img"><img class="rounded-circle"
+                                        src="../Final-project-dashboard/image/imgi_25_doctor-profile-img.jpg" width="31"
+                                        alt="User"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown"
+                                style="min-width:200px;">
+                                <div class="user-header">
+                                    <div class="avatar avatar-sm">
+                                        <img class="avatar-img"
+                                            src="../Final-project-dashboard/image/imgi_25_doctor-profile-img.jpg"
+                                            alt="User Image">
+                                    </div>
+                                    <div class="user-text">
+                                        <h6 class="mb-0">Dr Edalin Hendry</h6>
+                                        <p class="text-muted mb-0">Doctor</p>
+                                    </div>
+                                </div>
+                                <a class="dropdown-item" href="#">Dashboard</a>
+                                <a class="dropdown-item" href="#">Profile Settings</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </li>
+
+                    </ul>
+        </nav>
+    </section>
+
+    <div class="breadcrumb-bar">
+        <div class="container mx-auto  w-spec">
+            <div class="row align-items-center inner-banner">
+                <div class="col-md-12 col-12 text-center">
+                    <nav aria-label="breadcrumb" class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="" data-discover="true"><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li class="breadcrumb-item" aria-current="page">Doctor</li>
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                        <h2 class="breadcrumb-title">Dashboard</h2>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="breadcrumb-bg">
+            <img class="breadcrumb-bg-01" alt="img" src="../Final-project-dashboard/image/imgi_26_breadcrumb-bg-01.png">
+            <img class="breadcrumb-bg-02" alt="img" src="../Final-project-dashboard/image/imgi_27_breadcrumb-bg-02.png">
+        </div>
+    </div>
+    <div class="content mx-auto  w-spec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-3">
+                    <div class="doctor-sidebar border rounded-3 p-2">
+
+                        <!-- Doctor Profile Card -->
+                        <div class="profile-card text-center p-3">
+                            <img src="../Final-project-dashboard/image/imgi_25_doctor-profile-img.jpg"
+                                class="doctor-img" alt="">
+                            <h4 class="mt-2">Dr Edalin Hendry</h4>
+                            <p class="small text-muted mb-1 text-center mx-2">BDS, MDS - Oral & Maxillofacial Surgery
+                            </p>
+                            <span class="badge doctor-role"><i class="fa-solid fa-circle" style="color: #007bff;"></i>
+                                Dentist</span>
+                        </div>
+
+                        <!-- Availability Dropdown -->
+                        <div class="availability-box mt-4">
+                            <label class="form-label">Availability <span class="text-danger">*</span></label>
+                            <div class="availability-select" id="availabilitySelect">
+                                <span id="availabilityText">I am Available Now</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+
+                            <ul class="availability-options" id="availabilityOptions">
+                                <li data-value="I am Available Now">I am Available Now</li>
+                                <li data-value="Busy / Not Available">Busy / Not Available</li>
+                                <li data-value="Available on Appointment">Available on Appointment</li>
+                            </ul>
+                        </div>
+
+                        <!-- Sidebar Menu -->
+                        <nav class="sidebar-menu mt-4">
+                            <ul>
+                                <li class="active text-white bg bg-primary rounded-2"><i class="fa-solid fa-list"></i>
+                                    Dashboard</li>
+                                <li><i class="fa-regular fa-clipboard"></i> Requests <small class="notify">2</small>
+                                </li>
+                                <li><i class="fa-regular fa-calendar"></i> Appointments</li>
+                                <li><i class="fa-regular fa-calendar-plus"></i> Available Timings</li>
+                                <li><i class="fa-solid fa-user-injured"></i> My Patients</li>
+                                <li><i class="fa-regular fa-clock"></i> Specialties & Services</li>
+                                <li><i class="fa-regular fa-star"></i> Reviews</li>
+                                <li><i class="fa-regular fa-user"></i> Accounts</li>
+                                <li><i class="fa-regular fa-file"></i> Invoices</li>
+                                <li><i class="fa-solid fa-money-bill"></i> Payout Settings</li>
+                                <li><i class="fa-regular fa-comments"></i> Message <small class="notify">7</small></li>
+                                <li><i class="fa-solid fa-gear"></i> Profile Settings</li>
+                                <li><i class="fa-solid fa-shield-halved"></i> Social Media</li>
+                                <li><i class="fa-solid fa-key"></i> Change Password</li>
+                                <li><i class="fa-solid fa-arrow-right-from-bracket fa-flip-horizontal"></i> Logout</li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+                <!-- right content -->
+                <div class="col-lg-8 col-xl-9">
+
+                    <!-- ROW 1-3: Small Stat Cards + Appointments -->
+                    <div class="row gx-3">
+                        <!-- Small Stat Card 1 -->
+                        <div class="col-lg-4">
+                            <div class="dashboard-card stat-card border py-3 px-2 mb-3">
+                                <div class="d-flex align-items-center my-1">
+                                    <div>
+                                        <div class="small text-muted mt-2">Total Patient</div>
+                                        <div class="h5 mb-0">978</div>
+                                        <div class="small text-success my-2"><i class="fa-solid fa-arrow-up"></i> 15%
+                                            From Last Week</div>
+                                    </div>
+                                    <div class="stat-icon ms-5">
+                                        <i class="fa-solid fa-user-injured"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-card stat-card border py-3 px-2 my-2">
+                                <div class="d-flex align-items-center my-1">
+                                    <div>
+                                        <div class="small text-muted mt-2">Patients Today</div>
+                                        <div class="h5 mb-0">80</div>
+                                        <div class="small text-danger my-2"><i class="fa-solid fa-arrow-down"></i> 15%
+                                            From Yesterday</div>
+                                    </div>
+                                    <div class="stat-icon ms-5"> <i class="fa-solid fa-user"></i> </div>
+                                </div>
+                            </div> <!-- Small Stat Cards -->
+                            <div class="dashboard-card stat-card border py-3 px-2 my-2">
+                                <div class="d-flex align-items-center my-1">
+                                    <div>
+                                        <div class="small text-muted mt-2">Appointments Today</div>
+                                        <div class="h5 mb-0">50</div>
+                                        <div class="small text-success my-2"><i class="fa-solid fa-arrow-up"></i> 20%
+                                            From Yesterday</div>
+                                    </div>
+                                    <div class="stat-icon ms-5"> <i class="fa-solid fa-calendar-days"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Appointments Table -->
+                        <div class="col-lg-8">
+                            <div class="dashboard-card p-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0">Appointments</h5>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle text-decoration-none" data-bs-toggle="dropdown"
+                                            href="#" role="button">Last 7 Days</a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item text-decoration-none" href="#">Today</a></li>
+                                            <li><a class="dropdown-item text-decoration-none" href="#">This Month</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-decoration-none" href="#">Last 7 Days</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table align-middle mb-0 appointments-table">
+                                        <tbody>
+                                            <!-- all appointment rows copied exactly -->
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../Final-project-dashboard\image\imgi_30.jpg"
+                                                            class="rounded-3 me-3 avatar-sm" alt="patient">
+                                                        <div>
+                                                            <span class="small text-muted d-block">#Apt0001</span>
+                                                            <h6 class="mb-0">Adrian Marshall</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <span
+                                                        class="badge badge-pill badge-appointment bg-primary">General</span><br>
+                                                    <div class="small text-muted mt-1">11 Nov 2025 10:45 AM</div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <a href="#" class="action-accept text-decoration-none me-2"
+                                                        title="Accept"><i class="fa-solid fa-check"></i></a>
+                                                    <a href="#" class="action-decline text-decoration-none"
+                                                        title="Decline"><i class="fa-solid fa-xmark"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../Final-project-dashboard\image\imgi_31.jpg"
+                                                            class="rounded-3 me-3 avatar-sm" alt="patient">
+                                                        <div>
+                                                            <span class="small text-muted d-block">#Apt0002</span>
+                                                            <h6 class="mb-0">Kelly Stevens</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-appointment bg-primary">Clinic
+                                                        Consulting</span><br>
+                                                    <div class="small text-muted mt-1">10 Nov 2025 11:00 AM</div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <a href="#" class="action-accept me-2 text-decoration-none"
+                                                        title="Accept"><i class="fa-solid fa-check"></i></a>
+                                                    <a href="#" class="action-decline text-decoration-none"
+                                                        title="Decline"><i class="fa-solid fa-xmark"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../Final-project-dashboard\image\imgi_32.jpg"
+                                                            class="rounded-3 me-3 avatar-sm" alt="patient">
+                                                        <div>
+                                                            <span class="small text-muted d-block">#Apt0003</span>
+                                                            <h6 class="mb-0">Samuel Anderson</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <span
+                                                        class="badge badge-pill badge-appointment bg-primary">General</span><br>
+                                                    <div class="small text-muted mt-1">03 Nov 2025 02.00 PM</div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <a href="#" class="action-accept me-2 text-decoration-none"
+                                                        title="Accept"><i class="fa-solid fa-check"></i></a>
+                                                    <a href="#" class="action-decline text-decoration-none"
+                                                        title="Decline"><i class="fa-solid fa-xmark"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../Final-project-dashboard\image\imgi_33.jpg"
+                                                            class="rounded-3 me-3 avatar-sm" alt="patient">
+                                                        <div>
+                                                            <span class="small text-muted d-block">#Apt0004</span>
+                                                            <h6 class="mb-0">Catherine Griffin</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <span class="badge badge-pill badge-appointment bg-primary">Clinic
+                                                        Consulting</span><br>
+                                                    <div class="small text-muted mt-1">01 Nov 2025 04.00 PM</div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <a href="#" class="action-accept me-2 text-decoration-none"
+                                                        title="Accept"><i class="fa-solid fa-check"></i></a>
+                                                    <a href="#" class="action-decline text-decoration-none"
+                                                        title="Decline"><i class="fa-solid fa-xmark"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../Final-project-dashboard\image\imgi_34.jpg"
+                                                            class="rounded-3 me-3 avatar-sm" alt="patient">
+                                                        <div>
+                                                            <span class="small text-muted d-block">#Apt0005</span>
+                                                            <h6 class="mb-0">Robert Hutchinson</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <span
+                                                        class="badge badge-pill badge-appointment bg-primary">General</span><br>
+                                                    <div class="small text-muted mt-1">28 Oct 2025 05.30 PM</div>
+                                                </td>
+                                                <td class="text-end">
+                                                    <a href="#" class="action-accept me-2 text-decoration-none"
+                                                        title="Accept"><i class="fa-solid fa-check"></i></a>
+                                                    <a href="#" class="action-decline text-decoration-none"
+                                                        title="Decline"><i class="fa-solid fa-xmark"></i></a>
+                                                </td>
+                                            </tr>
+                                            <!-- More rows: replicate the above -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 4-6: Weekly Overview + Upcoming Appointment + Recent Patients + Recent Invoices -->
+                    <div class="row g-4">
+                        <!-- Weekly Overview (left) -->
+                        <div class="col-lg-5">
+                            <div class="dashboard-card p-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0">Weekly Overview</h5>
+                                    <div class="small text-muted">Mar 14 - Mar 21</div>
+                                </div>
+                                <div>
+                                    <canvas id="weeklyOverviewChart" style="height:220px; width:100%;"></canvas>
+                                </div>
+                            </div>
+                            <!-- Recent Patients (left) -->
+                            <div class="dashboard-card h-auto">
+                                <div class="dashboard-card p-3 h-auto">
+                                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
+                                        <h5 class="mb-0">Recent Patients</h5>
+                                        <a href="#" class="small">View All</a>
+                                    </div>
+                                
+                                    <div class="recent-patient-row d-flex">
+                                        <div class="recent-patient-grid pe-3 me-3">
+                                            <a class="patient-img" href="" data-discover="true">
+                                                <img src="../Final-project-dashboard/image/imgi_30.jpg" alt="Img">
+                                            </a>
+                                            <h5><a href="" data-discover="true">Adrian Marshall</a></h5>
+                                            <span class="border-bottom pb-2">Patient ID : P0001</span>
+                                            <div class="date-info pt-2">
+                                                <p>Last Appointment 15 Mar 2025</p>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="recent-patient-grid ps-3">
+                                            <a class="patient-img" href="" data-discover="true">
+                                                <img src="../Final-project-dashboard/image/imgi_31.jpg" alt="Img">
+                                            </a>
+                                            <h5><a href="" data-discover="true">Kelly Stevens</a></h5>
+                                            <span class="border-bottom pb-2">Patient ID : P0002</span>
+                                            <div class="date-info pt-2">
+                                                <p>Last Appointment 13 Mar 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Upcoming Appointment + Recent Invoices (right) -->
+                        <div class="col-lg-7">
+                            <!-- Upcoming Appointment -->
+                            <div class="upcoming-card p-3 mb-3">
+                                <h5 class="mb-4 text-white">Upcoming Appointment</h5>
+                                <div class="d-flex align-items-start mt-2 border-bottom pb-2">
+                                    <img src="../Final-project-dashboard/image/imgi_30.jpg"
+                                        class="rounded-3 me-3 avatar-lg" alt="upcoming">
+                                    <div class="flex-fill text-white">
+                                        <small class="d-block text-white-50">#Apt0001</small>
+                                        <h5 class="mb-0">Adrian Marshall</h5>
+                                        <div class="small">General visit • Today, 10:45 AM</div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 d-flex gap-2 pt-2">
+                                    <button class="btn fw-semibold me-3 text-white text-start"> <i
+                                            class="fa-solid fa-video"></i> Video Appointment</button>
+                                    <button class="btn fw-semibold bg-white rounded-pill btn-sm">Chat Now</button>
+                                    <button class="btn fw-semibold bg-white rounded-pill btn-sm">Start
+                                        Appointment</button>
+                                </div>
+                            </div>
+
+                            <!-- Recent Invoices -->
+                            <div class="dashboard-card p-3 h-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="mb-0">Recent Invoices</h5>
+                                    <a href="#" class="small">View All</a>
+                                </div>
+                                <ul class="list-unstyled mb-0 recent-invoices">
+                                    <li class="invoice-row d-flex align-items-center mb-3"> <img
+                                            src="../Final-project-dashboard/image/imgi_30.jpg"
+                                            class="rounded-circle me-3 avatar-sm" alt="">
+                                        <div class="flex-fill">
+                                            <div class="fw-semibold">Adrian <span
+                                                    class="small text-muted">#Apt0001</span></div>
+                                            <div class="small text-muted">Paid On 11 Nov 2025</div>
+                                        </div>
+                                        <div class="fw-bold">$450</div>
+                                    </li>
+                                    <li class="invoice-row d-flex align-items-center mb-3"> <img
+                                            src="../Final-project-dashboard/image/imgi_31.jpg"
+                                            class="rounded-circle me-3 avatar-sm" alt="">
+                                        <div class="flex-fill">
+                                            <div class="fw-semibold">Kelly <span
+                                                    class="small text-muted">#Apt0002</span></div>
+                                            <div class="small text-muted">Paid On 10 Nov 2025</div>
+                                        </div>
+                                        <div class="fw-bold">$500</div>
+                                    </li>
+                                    <li class="invoice-row d-flex align-items-center"> <img
+                                            src="../Final-project-dashboard/image/imgi_32.jpg"
+                                            class="rounded-circle me-3 avatar-sm" alt="">
+                                        <div class="flex-fill">
+                                            <div class="fw-semibold">Samuel <span
+                                                    class="small text-muted">#Apt0003</span></div>
+                                            <div class="small text-muted">Paid On 09 Nov 2025</div>
+                                        </div>
+                                        <div class="fw-bold">$320</div>
+                                    </li>
+                                    <li class="invoice-row d-flex align-items-center mb-3"> <img
+                                            src="../Final-project-dashboard/image/imgi_33.jpg"
+                                            class="rounded-circle me-3 avatar-sm" alt="">
+                                        <div class="flex-fill">
+                                            <div class="fw-semibold">Catherine <span
+                                                    class="small text-muted">#Apt0004</span></div>
+                                            <div class="small text-muted">Paid On 11 Nov 2025</div>
+                                        </div>
+                                        <div class="fw-bold">$450</div>
+                                    </li>
+                                    <li class="invoice-row d-flex align-items-center mb-3"> <img
+                                            src="../Final-project-dashboard/image/imgi_34.jpg"
+                                            class="rounded-circle me-3 avatar-sm" alt="">
+                                        <div class="flex-fill">
+                                            <div class="fw-semibold">Robert <span
+                                                    class="small text-muted">#Apt0005</span></div>
+                                            <div class="small text-muted">Paid On 11 Nov 2025</div>
+                                        </div>
+                                        <div class="fw-bold">$450</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 7: Notifications + Clinics -->
+                    <div class="row g-4 mt-1">
+                        <!-- Notifications -->
+                        <div class="col-lg-7">
+                            <div class="dashboard-card p-3">
+                                <div class="d-flex justify-content-between border-bottom pb-2 align-items-center mb-3">
+                                    <h5 class="mb-0">Notifications</h5>
+                                    <a href="#" class="small">View All</a>
+                                </div>
+                                <div class="dashboard-card-body">
+                                    <div class="table-responsive">
+                                        <table class="table dashboard-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border-0 p-0">
+                                                        <div class="table-noti-info">
+                                                            <div class="table-noti-icon color-violet rounded-2 bg-body-secondary"><i class="fa-solid fa-bell"></i></div>
+                                                            <div class="table-noti-message">
+                                                                <h6>
+                                                                    <a href="" data-discover="true" class="text-body-secondary">
+                                                                        Booking Confirmed on <span>21 Mar 2025</span> 10:30 AM
+                                                                    </a>
+                                                                </h6>
+                                                                <span class="message-time">Just Now</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-0 p-0">
+                                                        <div class="table-noti-info">
+                                                            <div class="table-noti-icon color-blue rounded-2 bg-body-secondary"><i class="fa-solid fa-star"></i></div>
+                                                            <div class="table-noti-message">
+                                                                <h6>
+                                                                    <a href="" data-discover="true" class="text-body-secondary">
+                                                                        You have a <span>New</span> Review for your Appointment
+                                                                    </a>
+                                                                </h6>
+                                                                <span class="message-time">5 Days ago</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-0 p-0">
+                                                        <div class="table-noti-info">
+                                                            <div class="table-noti-icon color-red rounded-2 bg-body-secondary"><i class="fa-solid fa-calendar-check"></i></div>
+                                                            <div class="table-noti-message">
+                                                                <h6>
+                                                                    <a href="" data-discover="true" class="text-body-secondary">
+                                                                        You have Appointment with <span>Ahmed</span> by 01:20 PM
+                                                                    </a>
+                                                                </h6>
+                                                                <span class="message-time">12:55 PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-0 p-0">
+                                                        <div class="table-noti-info">
+                                                            <div class="table-noti-icon color-yellow rounded-2 bg-body-secondary"><i class="fa-solid fa-money-bill-1-wave"></i></div>
+                                                            <div class="table-noti-message">
+                                                                <h6>
+                                                                    <a href="" data-discover="true" class="text-body-secondary">
+                                                                        Sent an amount of <span>$200</span> for an Appointment by 01:20 PM
+                                                                    </a>
+                                                                </h6>
+                                                                <span class="message-time">2 Days ago</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-0 p-0">
+                                                        <div class="table-noti-info">
+                                                            <div class="table-noti-icon color-blue rounded-2 bg-body-secondary"><i class="fa-solid fa-star"></i></div>
+                                                            <div class="table-noti-message">
+                                                                <h6>
+                                                                    <a href="" data-discover="true" class="text-body-secondary">
+                                                                        You have a <span>New</span> Review for your Appointment
+                                                                    </a>
+                                                                </h6>
+                                                                <span class="message-time">5 Days ago</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Clinics & Availability -->
+                        <div class="col-lg-5">
+                            <div class="dashboard-card p-3">
+                                <h5 class="mb-3 border-bottom pb-2">Clinics & Availability</h5>
+                                <div class="clinic-available">
+                                    <div class="clinic-head">
+                                        <div class="clinic-info">
+                                            <span class="clinic-img">
+                                                <img alt="Img" src="../Final-project-dashboard/image/imgi_35_clinic-02-Dk-Adecs.jpg">
+                                            </span>
+                                            <h6>Sofi's Clinic</h6>
+                                        </div>
+                                        <div class="clinic-charge">
+                                            <span>$900</span>
+                                        </div>
+                                    </div>
+                                    <div class="available-time">
+                                        <ul>
+                                            <li class="mb-2"><span>Tue :</span> 07:00 AM - 09:00 PM</li>
+                                            <li><span>Wed :</span> 07:00 AM - 09:00 PM</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="clinic-available">
+                                    <div class="clinic-head">
+                                        <div class="clinic-info">
+                                            <span class="clinic-img">
+                                                <img alt="Img" src="../Final-project-dashboard/image/imgi_35_clinic-02-Dk-Adecs.jpg">
+                                            </span>
+                                            <h6>The Family Dentistry Clinic</h6>
+                                        </div>
+                                        <div class="clinic-charge">
+                                            <span>$600</span>
+                                        </div>
+                                    </div>
+                                    <div class="available-time">
+                                        <ul>
+                                            <li class="mb-2"><span>Sat :</span> 07:00 AM - 09:00 PM</li>
+                                            <li><span>Tue :</span> 07:00 AM - 09:00 PM</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer pt-5 pb-4 mt-5 position-relative overflow-hidden">
+
+  <!-- Decorative background images -->
+  <div class="footer-bg">
+    <img class="footer-bg-01" src="../Final-project-dashboard/image/imgi_26_breadcrumb-bg-01.png" alt="bg">
+    <img class="footer-bg-02" src="../Final-project-dashboard/image/imgi_27_breadcrumb-bg-02.png" alt="bg">
+  </div>
+
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="row g-4">
+
+      <!-- Company -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Company</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Locations</a></li>
+        </ul>
+      </div>
+
+      <!-- Treatments -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Treatments</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Dental</a></li>
+          <li><a href="#">Cardiac</a></li>
+          <li><a href="#">Spinal Cord</a></li>
+          <li><a href="#">Hair Growth</a></li>
+          <li><a href="#">Anemia & Disorder</a></li>
+        </ul>
+      </div>
+
+      <!-- Specialities -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Specialities</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Transplant</a></li>
+          <li><a href="#">Cardiologist</a></li>
+          <li><a href="#">Oncology</a></li>
+          <li><a href="#">Pediatrics</a></li>
+          <li><a href="#">Gynecology</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Newsletter</h6>
+        <p class="text-muted small mb-2">Subscribe & Stay Updated from the Doccure</p>
+
+        <div class="input-group mb-3 footer-newsletter position-relative">
+          <input type="email" class="form-control form-control-sm" placeholder="Enter Email Address">
+          <button class="btn gradient-btn btn-sm rounded-pill position-absolute end-0 me-3 mt-1">
+            <i class="fas fa-paper-plane me-1"></i> Send
+          </button>
+        </div>
+
+        <h6 class="footer-title mt-3">Connect With Us</h6>
+        <div class="d-flex gap-2">
+          <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Bottom Copyright Bar ======= -->
+  
+</footer>
+<div class="footer-bottom py-3">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center text-muted small">
+    <div>&copy; 2025 Doccure. All Rights Reserved.</div>
+
+    <div class="d-flex align-items-center gap-2 footer-links-bottom">
+      <a href="#">Legal Notice</a>
+      <span>•</span>
+      <a href="#">Privacy Policy</a>
+      <span>•</span>
+      <a href="#">Refund Policy</a>
+    </div>
+
+    <div class="footer-payments">
+      <img src="../Final-project-dashboard/image/imgi_42_card-01.svg" alt="Payments" height="26">
+      <img src="../Final-project-dashboard/image/imgi_43_card-02.svg" alt="Payments" height="26">
+      <img src="../Final-project-dashboard/image/imgi_44_card-03.svg" alt="Payments" height="26">
+      <img src="../Final-project-dashboard/image/imgi_45_card-04.svg" alt="Payments" height="26">
+      <img src="../Final-project-dashboard/image/imgi_46_card-05.svg" alt="Payments" height="26">
+      <img src="../Final-project-dashboard/image/imgi_47_card-06.svg" alt="Payments" height="26">
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
